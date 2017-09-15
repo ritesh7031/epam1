@@ -72,7 +72,7 @@ public class StudentGroup implements StudentArrayOperation {
 		// Add your implementation here
 		if (student == null) 
 			throw new IllegalArgumentException();
-		for(int i=students.length;i>=0;i--)
+		for(int i=students.length-1;i>=0;i--)
 		{
 			students[i+1]=students[i];
 		}
