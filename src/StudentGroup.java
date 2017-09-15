@@ -123,7 +123,8 @@ public class StudentGroup implements StudentArrayOperation {
 		int index=-1,i ;
 		for(i=0;i<students.length;i++){
 			if(students[i]==student)
-			{	index=i;break;
+			{	index=i;
+			 	break;
 			}
 
 		}
