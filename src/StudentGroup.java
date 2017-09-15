@@ -275,7 +275,7 @@ public class StudentGroup implements StudentArrayOperation {
 
 		if(date==null)
 			throw new IllegalArgumentException();		
-		Date d1=date;
+		/*Date d1=date;
 		d1.setDate(date.getDate()+days);
 		Date d2=date;
 		d2.setDate(date.getDate()-days);
@@ -288,8 +288,8 @@ public class StudentGroup implements StudentArrayOperation {
 				s2[j++]=students[i];
 		}
 		//if(s2!=null)
-		return s2;
-	//	return null;
+		return s2;*/	
+		return null;
 	}
 
 	@Override
