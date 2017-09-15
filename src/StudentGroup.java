@@ -72,7 +72,7 @@ public class StudentGroup implements StudentArrayOperation {
 		// Add your implementation here
 		if (student == null) 
 			throw new IllegalArgumentException();
-		for(int i=students.length-1;i>=0;i--)
+		for(int i=students.length;i>=0;i--)
 		{
 			students[i+1]=students[i];
 		}
@@ -123,8 +123,7 @@ public class StudentGroup implements StudentArrayOperation {
 		int index=-1,i ;
 		for(i=0;i<students.length;i++){
 			if(students[i]==student)
-			{	index=i;
-			 	break;
+			{	index=i;break;
 			}
 
 		}
@@ -288,9 +287,9 @@ public class StudentGroup implements StudentArrayOperation {
 			if(students[i].getBirthDate().compareTo(d1)==0 && students[i].getBirthDate().compareTo(d2)==0)
 				s2[j++]=students[i];
 		}
-		if(s2!=null)
+		//if(s2!=null)
 		return s2;
-		return null;
+	//	return null;
 	}
 
 	@Override
@@ -298,7 +297,7 @@ public class StudentGroup implements StudentArrayOperation {
 		// Add your implementation here
 		if(indexOfStudent==0)
 			throw new IllegalArgumentException();	
-		return(2017-students[indexOfStudent].getBirthDate().getYear());
+		return(2017-(int)students[indexOfStudent].getBirthDate().getYear());
 //		return 0;
 	}
 
@@ -309,7 +308,7 @@ public class StudentGroup implements StudentArrayOperation {
 		int i,j;
 		for( i=0,j=0;i<students.length;i++)
 		{
-			if(age==(2017-students[i].getBirthDate().getYear()))
+			if(age==(2017-(int)students[i].getBirthDate().getYear()))
 				s2[j++]=students[i];
 		}
 		return s2;
@@ -331,9 +330,9 @@ public class StudentGroup implements StudentArrayOperation {
 			if(students[i].getAvgMark()==max)
 				s2[j++]=students[i];
 		}
-		if(s2!=null)
+		//if(s2!=null)
 		return s2;
-		return null;
+		//return null;
 	}
 
 	@Override
